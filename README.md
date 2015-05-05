@@ -40,8 +40,9 @@ if (cluster.isMaster) {
 ##Sample Application
 
 I have wrote starter express application, with support of clustering. 
+Following is the code.
 
-Following is the code.package.json
+package.json
 
 ```
 {
@@ -55,6 +56,7 @@ Following is the code.package.json
 ```
 
 Application starting point.
+
 app.js.
 
 ```
@@ -75,6 +77,7 @@ app.listen(port,function() {
 ```
 
 Here's main file, runs application in cluster.
+
 cluster.js.
 
 ```

@@ -39,10 +39,11 @@ if (cluster.isMaster) {
 ```
 ##Sample Application
 
-I have wrote starter express application, with support of clustering. Following is the code.
-```
-package.json
+I have wrote starter express application, with support of clustering. 
 
+Following is the code.package.json
+
+```
 {
   "name": "nodejs-cluster",
   "version": "0.0.1",
@@ -51,10 +52,12 @@ package.json
     "process": "*"
   }
 }
-Application starting point.
+```
 
+Application starting point.
 app.js.
 
+```
 var express = require("express");
 var app = express();
 var process = require('process'); 
@@ -70,10 +73,11 @@ app.listen(port,function() {
 });
 
 ```
+
 Here's main file, runs application in cluster.
-```
 cluster.js.
 
+```
 //Cluster Module
 var cluster = require('cluster');
 //OS Module
